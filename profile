@@ -9,6 +9,27 @@ source $BP_ROOT/includes/functions
 # exports
 ###################
 
+# Color
+export CLICOLOR=1
+export LSCOLORS="Cagacacagafacacacacaca"
+
+# custom PS1
+PS1="\u@\h:\w# \$(git_branch)"
+
+# editor
+export EDITOR='vim'
+
+###################
+# set path
+###################
+if [ -d "$HOME/bin" ]; then
+  export PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "$BP_ROOT/bin" ]; then
+  export PATH="$BP_ROOT/bin:$PATH"
+fi
+
 ###################
 # set aliases
 ###################
