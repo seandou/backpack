@@ -1,15 +1,1 @@
 #!/bin/bash
-
-# directories alias
-alias d='cd $HOME/Downloads'
-alias p='cd $HOME/Projects'
-alias tmp='cd $HOME/Tmp'
-alias bp='cd $HOME/.backpack'
-
-alias gg='google'
-
-alias st='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-alias e='atom .'
-alias v='vagrant'
-
-alias use_proxy='ALL_PROXY=socks5://127.0.0.1:7070'

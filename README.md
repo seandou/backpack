@@ -18,8 +18,40 @@ source ~/.profile
 
 After editing your custom aliases、functions or other changes, just type ```reload``` to reload profile.
 
+You can define your custom functions and alias in ```includes/custom``` and ```includes/aliases```, eg
 
-## Aliases
 
-- ```o``` Open finder to working directory
-- ```cpwd``` Copy working directory to your clipboard
+```
+# includes/aliases
+alias d='cd $HOME/Downloads'
+alias p='cd $HOME/Projects'
+alias tmp='cd $HOME/Tmp'
+alias bp='cd $HOME/.backpack'
+
+alias gg='google'
+
+alias st='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias e='atom .'
+alias v='vagrant'
+
+alias use_proxy='ALL_PROXY=socks5://127.0.0.1:7070'
+
+```
+
+
+## Usage
+
+- Working directory tips
+
+```
+o .           # Open working directory
+ll            # List working directory
+cpwd          # Copy working directory, Command + v will paste the path to terminal
+```
+
+- Get file md5 or sha1
+
+```
+md5 <file>
+sha1 <file>
+```
