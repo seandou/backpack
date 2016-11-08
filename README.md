@@ -15,3 +15,11 @@ ln -s $HOME/.backpack/profile $HOME/.profile
 
 source ~/.profile
 ```
+
+After editing your custom aliases、functions or other changes, just type ```reload``` to reload profile.
+
+
+## Aliases
+
+- ```o``` Open finder to working directory
+- ```cpwd``` Copy working directory to your clipboard
