@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ ! -d "$BP_ROOT" ]; then
+    exit 1
+fi
+
+for f in $(ls "$BP_ROOT/dotfiles/"); do
+    fpath="$HOME/.$f"
+    if [ -f $fpath ]; then
+        unlink $fpath
+    fi
+    
+    echo "ln -s $BP_ROOT/dotfiles/$f $fpath"
+    ln -s $BP_ROOT/dotfiles/$f $fpath    
+done

@@ -7,13 +7,14 @@ This project is writen for simplifing this process.
 
 ## Installation
 
-Clone backpack to your home path, and load your profile.
+Clone backpack to your home path, and load your profile and dotfiles.
 
 ```
 git clone https://github.com/seandou/backpack.git $HOME/.backpack
 ln -s $HOME/.backpack/profile $HOME/.profile
 
 source ~/.profile
+reload_dotfiles
 ```
 
 After editing your custom aliases、functions or other changes, just type ```reload``` to reload profile.
