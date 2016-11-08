@@ -1,6 +1,12 @@
 #!/bin/bash
 
+function check_command() {
+    local cmd=$1
+    which $cmd >> /dev/null 2>&1
+    return $?
+}
+
 function git_branch {
-    ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
+    local ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
     echo "("${ref#refs/heads/}") ";
 }
