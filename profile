@@ -44,6 +44,10 @@ if [ -d "$BP_ROOT/bin" ]; then
   export PATH="$BP_ROOT/bin:$PATH"
 fi
 
+if [ -d "/usr/local/opt/gnu-sed/libexec/gnubin" ]; then
+  export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+fi
+
 ###################
 # set aliases
 ###################
