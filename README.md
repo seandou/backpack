@@ -17,8 +17,6 @@ source ~/.profile
 reload_dotfiles
 ```
 
-After editing your custom aliases、functions or other changes, just type ```reload``` to reload profile.
-
 You can define your custom functions and alias in ```includes/custom``` and ```includes/aliases```, eg
 
 
@@ -36,9 +34,9 @@ alias e='atom .'
 alias v='vagrant'
 
 alias use_proxy='ALL_PROXY=socks5://127.0.0.1:7070'
-
 ```
 
+After editing your custom aliases、functions or other changes, just type ```reload``` to reload profile.
 
 ## Usage
 
@@ -56,3 +54,4 @@ cpwd          # Copy working directory, Command + v will paste the path to termi
 md5 <file>
 sha1 <file>
 ```
+
