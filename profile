@@ -12,6 +12,14 @@ source $BP_ROOT/includes/functions
 ###################
 # set aliases
 ###################
+alias o='open'
+alias ll='ls -al'
+alias l='ls -l'
+alias md5='openssl md5'
+alias sha1='openssl sha1'
+alias psg='ps -ef | grep'
+alias cpwd='echo -n $(pwd) | pbcopy'
+alias reload='source $HOME/.profile'
 
 ############################
 # load custom bashrc
