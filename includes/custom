@@ -1,21 +1,11 @@
 #!/bin/bash
 
-########################
-# functions
-########################
+# exports
+if [ -f "$BP_ROOT/includes/exports" ]; then
+  source $BP_ROOT/includes/exports
+fi
 
-# open google from terminal
-function google() {
-  local google_url='https://www.google.com/?gfe_rd=cr&gws_rd=cr&fg=1#q='
-  local q="$@"
-  q=`echo $q | python -c 'import sys,urllib;print urllib.quote(sys.stdin.read().strip())'`
-  local search_url=$google_url$q
-  open "$search_url"
-}
-
-########################
 # aliases
-########################
 if [ -f "$BP_ROOT/includes/aliases" ]; then
   source $BP_ROOT/includes/aliases
 fi
