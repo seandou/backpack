@@ -17,41 +17,13 @@ source ~/.profile
 reload_dotfiles
 ```
 
-You can define your custom functions and alias in ```includes/custom``` and ```includes/aliases```, eg
+## Custom your backpack
 
+- bin files                # $HOME/.backpack/bin/<your-bin-file>
+- dot files                # $HOME/.backpack/dotfiles/<your-dot-file>
+- functions                # $HOME/.backpack/includes/functions
+- exports                  # $HOME/.backpack/includes/exports
+- aliases                  # $HOME/.backpack/includes/aliases
 
-```
-# includes/aliases
-alias d='cd $HOME/Downloads'
-alias p='cd $HOME/Projects'
-alias tmp='cd $HOME/Tmp'
-alias bp='cd $HOME/.backpack'
-
-alias gg='google'
-
-alias st='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-alias e='atom .'
-alias v='vagrant'
-
-alias use_proxy='ALL_PROXY=socks5://127.0.0.1:7070'
-```
-
-After editing your custom aliases、functions or other changes, just type ```reload``` to reload profile.
-
-## Usage
-
-- Working directory tips
-
-```
-o .           # Open working directory
-ll            # List working directory
-cpwd          # Copy working directory, Command + v will paste the path to terminal
-```
-
-- Get file md5 or sha1
-
-```
-md5 <file>
-sha1 <file>
-```
+After editing your custom functions/exports/aliases or other changes, just type ```reload``` to reload profile.
 
